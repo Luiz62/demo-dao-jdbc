@@ -67,4 +67,9 @@ public class DB {
 			}
 		}
 	}
+
+	public static void closeAll(Statement statement, ResultSet resultSet) {
+		closeStatement(statement);
+		closeResultSet(resultSet);
+	}
 }
